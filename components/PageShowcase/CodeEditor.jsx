@@ -2,13 +2,13 @@ import CodeIllustration from "./CodeIllustration"
 
 export default function CodeEditorOne() {
   return (
-    <div className="flex flex-col w-full h-full mx-2 rounded-md bg-[rgb(36,39,82)] shadow-[20px_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
+    <div className="flex flex-col w-full h-full mx-auto rounded-md bg-[rgb(36,39,82)] shadow-[20px_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
                         <div className="w-full h-[60%] mb-2 border-2 border-[rgb(113,235,249)] rounded-md overflow-hidden">
                             <div className="w-full h-fit bg-[rgb(59,62,91)] p-2">
                                 <h3 className='font-bold'>Prompt</h3>
                             </div>
                             <div className="w-full h-[85%] p-2">
-                                <h3 className='lg:text-[1rem] font-bold'>Max Profit With K Transactions</h3>
+                                <h3 className='text-[0.8rem] lg:text-[1rem] font-bold'>Max Profit With K Transactions</h3>
                                 <div className="w-full h-fit my-0 flex flex-col justify-between">
                                     <div className="w-[90%] h-fit my-4">
                                         <CodeIllustration w='90%'/>
