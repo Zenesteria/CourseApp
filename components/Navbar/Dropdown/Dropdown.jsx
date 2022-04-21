@@ -1,9 +1,15 @@
+import { useState } from "react"
 import DropdownItem from "./DropdownItem"
-import { Display, DisplayMenu } from "./DropdownItem"
+import DisplayBtn from "./DisplayBtn";
+import Display from "./Display";
 
 export default function Dropdown({index}) {
+  const [active, setActive] = useState({
+    id: 'algo'
+  })
   switch(index){
     case 0:
+
       return (
         <div className="dropdown flex flex-col h-[10vh] absolute top-[22px] left-[-100%] w-[300px] pt-4">
             <div className="bg-white h-fit w-full text-black">
@@ -16,15 +22,16 @@ export default function Dropdown({index}) {
         </div>
       )
     case 1:
+      
       return (
         <div className="dropdown flex flex-col h-[550px] absolute top-[22px] left-[-100%] w-[600px] pt-4" data-pos={'110px'}>
             <div className="flex w-full h-full bg-white shadow-xl overflow-hidden rounded-lg">
                 <div className="flex-[0.4] text-black">
-                    <DisplayMenu header={'AlgoExpert'} actColor={'#7580F0'}/>
-                    <DisplayMenu header={'SystemsExpert'} actColor={'#B31B00'}/>
-                    <DisplayMenu header={'MLExpert'} actColor={'orange'}/>
-                    <DisplayMenu header={'FrontendExpert'} actColor={'teal'}/>
-                    <DisplayMenu header={'ProgrammingExpert'} actColor={'#FF2E5B'}/>
+                    <DisplayBtn header={'AlgoExpert'} actColor={'#7580F0'} id='algo'/>
+                    <DisplayBtn header={'SystemsExpert'} actColor={'#B31B00'} id='systems'/>
+                    <DisplayBtn header={'MLExpert'} actColor={'orange'} id='ml'/>
+                    <DisplayBtn header={'FrontendExpert'} actColor={'teal'} id='frontend'/>
+                    <DisplayBtn header={'Bonus'} actColor={'#FF2E5B'} id='bonus'/>
                 </div>
                 <div className="flex-[0.6] bg-purple-300">
                     <Display/>

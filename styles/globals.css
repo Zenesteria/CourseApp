@@ -36,19 +36,45 @@ a {
   transform: scaleY(0);
   transition: all 0.1s;
 }
-.dropdown::after{
+/* .firstLink::after{
   content: '';
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 15px 15px 15px;
-  border-color: transparent transparent #ffffff transparent;
+  border-color: transparent transparent rgb(133, 82, 82) transparent;
   position: absolute;
   top: 5px;
   left: 125px;
-}
+} */
+
+/* .firstLink:hover > .firstLink::after{
+  border-color: transparent transparent #7580F0 transparent !important;
+  color: red !important;
+} */
 
 .nav-link:hover > .dropdown, .dropdown:hover{
   transform: scaleY(1);
   transition: all .4s;
+}
+
+
+
+/* SHOWCASE SECTION */
+.threedcont{
+  perspective: 700px;
+}
+.threed{
+  /* transform: rotate3d(1.5, -0.966, 0.2, 30deg) rotateZ(-0.3deg); */
+  transform: rotate3d(0.5, -0.866, 0, 15deg) rotateZ(-1deg);
+}
+
+.logs::-webkit-scrollbar{
+  width: 5px;
+  background-color: transparent;
+}
+
+.logs::-webkit-scrollbar-thumb{
+  background-color: aliceblue;
+  border-radius: 10px;
 }
