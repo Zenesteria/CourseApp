@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Showcase from '../components/PageShowcase/Showcase'
+import Subshowcase from '../components/Subsection/Subshowcase'
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Showcase/>
+
+      <Subshowcase/>
     </div>
   )
 }
